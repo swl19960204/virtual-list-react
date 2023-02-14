@@ -1,5 +1,5 @@
-import React, { useState } from 'react'
-import { VirtualScrollList } from './components/VirtualList'
+import React, { useState } from 'react';
+import { VirtualScrollList } from './components/VirtualList';
 const getPageData = (count, currentLength) => {
   const DataItems = []
   for (let i = 0; i < count; i++) {
