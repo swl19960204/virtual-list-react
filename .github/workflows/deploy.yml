@@ -27,4 +27,4 @@ jobs:
           BRANCH: gh-pages
           FOLDER: build
           # REPOSITORY_NAME:
-          # TARGET_FOLDER:
+          TARGET_FOLDER: virtual-list-react
