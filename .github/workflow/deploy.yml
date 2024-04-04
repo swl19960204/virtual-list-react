@@ -2,7 +2,7 @@ name: Node CI
 
 on:
   push:
-    branches: ["master"]
+    branches: ["main"]
 
 jobs:
   build-preview:
@@ -22,7 +22,7 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@3.5.9
         with:
         ACCESS_TOKEN: ${{ secrets.REACT_VIRTUAL_LIST_TOKEN }}
-        BRANCH: master
+        BRANCH: main
         FOLDER: dist
         # REPOSITORY_NAME:
         # TARGET_FOLDER:
