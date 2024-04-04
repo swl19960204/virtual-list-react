@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { VirtualScrollList } from './components/VirtualList';
+
 const getPageData = (count, currentLength) => {
   const DataItems = []
   for (let i = 0; i < count; i++) {
@@ -13,7 +14,9 @@ const getPageData = (count, currentLength) => {
   }
   return DataItems
 }
+
 const pageSize = 20;
+
 function App() {
   const [items, setItems] = useState(getPageData(pageSize, 0))
   function onScrollToBottom() {
