@@ -8,6 +8,7 @@
     "react-dom": "^17.0.2",
     "react-scripts": "5.0.1"
   },
+  "homepage": "https://swl19960204.github.io/virtual-list-react",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
