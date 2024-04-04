@@ -17,6 +17,8 @@ jobs:
         run: |
           npm install
           npm run build
+        env:
+          NODE_OPTIONS: "--max_old_space_size=4096"
 
       - name: Deploy # 部署到github page
         uses: JamesIves/github-pages-deploy-action@3.5.9
