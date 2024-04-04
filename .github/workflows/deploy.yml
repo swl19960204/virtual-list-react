@@ -25,6 +25,6 @@ jobs:
         with:
           ACCESS_TOKEN: ${{ secrets.REACT_VIRTUAL_LIST_TOKEN }}
           BRANCH: main
-          FOLDER: dist
+          FOLDER: build
           # REPOSITORY_NAME:
           # TARGET_FOLDER:
