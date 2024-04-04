@@ -30,7 +30,7 @@ function App() {
       <VirtualScrollList
         dataSources={items}
         estimateSize={80}
-        dataKey={'id'}
+        dataKey="id"
         tobottom={onScrollToBottom}
         rootClass={"list-infinite"}
         itemClass={"list-item-infinite"}
