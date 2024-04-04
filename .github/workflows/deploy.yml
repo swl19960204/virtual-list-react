@@ -21,7 +21,7 @@ jobs:
           NODE_OPTIONS: "--max_old_space_size=4096"
 
       - name: Deploy # 部署到github page
-        uses: JamesIves/github-pages-deploy-action@3.5.9
+        uses: JamesIves/github-pages-deploy-action@3.7.1
         with:
           ACCESS_TOKEN: ${{ secrets.REACT_VIRTUAL_LIST_TOKEN }}
           BRANCH: main
