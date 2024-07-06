@@ -47,10 +47,10 @@ function App() {
       >
         {
           (item, _) => {
-            return <div className="item-inner" style={{ lineHeight: item.lineHeight }}>
+            return <div className="item-inner">
               <div className="head">
                 <span className="index"># {item.text}</span>
-                <span className="name">&nbsp;&nbsp;{item.lineHeight}</span>
+                <span className="name"># {item.lineHeight}</span>
               </div>
               <div className="desc">{item.index}</div>
             </div>
