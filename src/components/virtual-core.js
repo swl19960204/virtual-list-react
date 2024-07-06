@@ -193,7 +193,7 @@ export default class Virtual {
         let middle = 0
         let middleOffset = 0
         let high = this.param.uniqueIds.length
-
+        // 当我们在使用二分搜索算法时，计算中间位置索引的目的是为了将搜索范围分成两半，从而缩小查找的范围。正确的计算方法是 `middle = low + Math.floor((high - low) / 2)`。这里解释为什么这样做，以及为什么不使用 `middle = Math.floor((high - low) / 2)`。
         while (low <= high) {
             // this.__bsearchCalls++
             middle = low + Math.floor((high - low) / 2)

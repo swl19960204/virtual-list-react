@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { VirtualScrollList } from './components/VirtualList';
+// import { VirtualScrollList } from './components/VirtualList';
+import { VirtualScrollList } from '@swl19960204/virtual-list-react';
 
 const getPageData = (count, currentLength) => {
   const DataItems = []
@@ -7,7 +8,7 @@ const getPageData = (count, currentLength) => {
     const index = currentLength + i
     DataItems.push({
       index,
-      text: 'Item ' + i,
+      text: 'Item' + i,
       lineHeight: 20 + (i % 20) + 'px',
       id: Math.random() * (index + 1),
     })
@@ -46,10 +47,10 @@ function App() {
       >
         {
           (item, _) => {
-            return <div className="item-inner">
+            return <div className="item-inner" style={{ lineHeight: item.lineHeight }}>
               <div className="head">
                 <span className="index"># {item.text}</span>
-                <span className="name">{item.lineHeight}</span>
+                <span className="name">&nbsp;&nbsp;{item.lineHeight}</span>
               </div>
               <div className="desc">{item.index}</div>
             </div>

@@ -67,7 +67,7 @@ export class VirtualScrollList extends React.Component {
         this.virtual = new Virtual({
             slotHeaderSize: 0, slotFooterSize: 0, keeps: this.props.keeps, estimateSize: this.props.estimateSize,
             buffer: Math.round(this.props.keeps / 3),
-            // recommend for a third of keeps      
+            // recommend for a third of keeps    
             uniqueIds: this.getUniqueIdFromDataSources(),
         }, this.onRangeChanged);
         // sync initial range   
@@ -220,7 +220,9 @@ export class VirtualScrollList extends React.Component {
     };
     render() {
         const { padFront, padBehind } = this.state.range;
-        const { pageMode, rootTag, wrapTag, wrapClass, wrapStyle, headerTag, headerClass, headerStyle, footerTag, footerClass, footerStyle, rootClass, rootStyle, header, footer } = this.props;
+        const { pageMode, rootTag, wrapTag, wrapClass, wrapStyle, headerTag,
+             headerClass, headerStyle, footerTag, footerClass, footerStyle, 
+             rootClass, rootStyle, header, footer } = this.props;
         const paddingStyle = { padding: this.isHorizontal ? `0px ${padBehind}px 0px ${padFront}px` : `${padFront}px 0px ${padBehind}px`, };
         const wrapperStyle = wrapStyle ? Object.assign({}, wrapStyle, paddingStyle) : paddingStyle;
         return React.createElement(rootTag,
