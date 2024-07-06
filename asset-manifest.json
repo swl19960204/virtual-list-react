@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/virtual-list-react/static/css/main.64ce3913.css",
-    "main.js": "/virtual-list-react/static/js/main.43fbe413.js",
+    "main.js": "/virtual-list-react/static/js/main.254bd2ff.js",
     "index.html": "/virtual-list-react/index.html",
     "main.64ce3913.css.map": "/virtual-list-react/static/css/main.64ce3913.css.map",
-    "main.43fbe413.js.map": "/virtual-list-react/static/js/main.43fbe413.js.map"
+    "main.254bd2ff.js.map": "/virtual-list-react/static/js/main.254bd2ff.js.map"
   },
   "entrypoints": [
     "static/css/main.64ce3913.css",
-    "static/js/main.43fbe413.js"
+    "static/js/main.254bd2ff.js"
   ]
 }
